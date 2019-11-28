@@ -13,6 +13,6 @@ body{
     height: 100%;   
 }
 .title{
-    
+    font-size: 14px;
 }
 </style>
