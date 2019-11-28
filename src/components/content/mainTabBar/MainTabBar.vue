@@ -30,8 +30,8 @@
 </template>
 
 <script>
- import FooterBar from "../tabbar/Footer"
- import FooterBarItem from "com/common/tabbar/FooterItem"
+ import FooterBar from "components/common/tabbar/Footer"
+ import FooterItem from "components/common/tabbar/FooterItem"
 
 export default {
 name:'MainTabBar',
@@ -42,7 +42,7 @@ name:'MainTabBar',
   },
   components: {
    FooterBar,
-   FooterBarItem
+   FooterItem
   }
 }
 </script>
