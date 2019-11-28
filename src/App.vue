@@ -8,7 +8,7 @@ body{
     margin: 0;
     padding: 0;
 }
-app{
+.app{
     width: 100%;
     height: 100%;   
 }
