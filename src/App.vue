@@ -3,6 +3,7 @@
 
     <main-tabbar></main-tabbar>
     <router-view></router-view>
+    <!-- 2020 -->
   </div>
 </template>
 <script>
