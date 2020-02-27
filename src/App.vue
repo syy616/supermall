@@ -3,7 +3,7 @@
 
     <main-tabbar></main-tabbar>
     <router-view></router-view>
-    <!-- 2020 -->
+    <!-- 2020 16:22分创建了远程分支-->
   </div>
 </template>
 <script>
