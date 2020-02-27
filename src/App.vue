@@ -3,11 +3,11 @@
 
     <main-tabbar></main-tabbar>
     <router-view></router-view>
-    <!-- 2020 -->
+    <!-- 2020 16:47-->
   </div>
 </template>
 <script>
-  import MainTabbar from 'components/content/mainTabbar/MainTabBar'
+  import MainTabbar from 'components/content/mainTabBar/MainTabBar'
 
 export default {
   components:{
