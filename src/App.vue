@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-
-    <main-tabbar></main-tabbar>
     <router-view></router-view>
+    <main-tabbar></main-tabbar> 
     <!-- 2020 16:47-->
   </div>
 </template>

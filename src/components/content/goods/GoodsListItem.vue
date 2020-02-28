@@ -1,7 +1,8 @@
 <!--  -->
 <template>
 <div class="goods-item">
-<img :src="goodsItem.show.img" alt="">
+<img :src="goodsItem.show.img" alt=""
+      @load="imgload">
 <div class="goods-info">
 <p>{{goodsItem.title}}</p>
 <span class="price">{{goodsItem.price}}</span>
@@ -19,6 +20,13 @@ export default {
         default() {
           return {}
         }
+      }
+    },
+    methods:{
+      imgload(){
+        console.log("jiazai")
+        //每张图片加载完就调用一次scroll刷新测算高度
+        this.$bus.$emit('itemImageLoad')
       }
     }
 }
