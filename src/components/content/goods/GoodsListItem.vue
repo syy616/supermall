@@ -24,7 +24,7 @@ export default {
     },
     methods:{
       imgload(){
-        console.log("jiazai")
+        // console.log("jiazai")
         //每张图片加载完就调用一次scroll刷新测算高度
         this.$bus.$emit('itemImageLoad')
       }

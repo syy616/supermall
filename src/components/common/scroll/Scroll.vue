@@ -16,10 +16,10 @@ export default {
         type: Number,
         default: 0
     },
-    // pullUpLoad: {
-    //     type: Boolean,
-    //     default: false
-    // }
+    pullUpLoad: {
+        type: Boolean,
+        default: false
+    }
     },
 data() {
 return {
@@ -41,16 +41,22 @@ mounted() {
     })
 
     //2.监听滚动位置
+    if(this.probeType ===2 || this.probeType === 3){
     this.bs.on('scroll',(position)=>{
     this.$emit('scroll', position)
     })
+ 
+    }
 
     // console.log(this.bs);
     // this.bs.refresh();
     // 3.监听上拉事件
-    // this.bs.on('pullingUp', () => {
-    // this.$emit('pullingUp')
-    // })
+    if(this.pullUpLoad){
+    this.bs.on('pullingUp', () => {
+    this.$emit('pullingUp')
+    })
+    }
+
 },
 methods:{
     scrollTo(x, y, time=300) {
